@@ -20,6 +20,10 @@ impl Processor {
     ) -> ProgramResult {
         let instruction = EscrowInstruction::unpack(instruction_data)?;
 
+        println!("bruh");
+        msg!("bruh msg");
+        msg!("bruh12321321");
+
         match instruction {
             EscrowInstruction::InitEscrow { amount } => {
                 msg!("Instruction: InitEscrow");
