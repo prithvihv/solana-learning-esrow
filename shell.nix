@@ -9,6 +9,10 @@ pkgs.mkShell {
     rust-analyzer
     clippy
 
+    # required by hidapi v1.3.2
+    pkg-config
+    udev
+
     binutils.bintools
   ];
 
